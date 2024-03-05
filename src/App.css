@@ -1,0 +1,164 @@
+@font-face {
+  font-family: 'Azeret';
+  src: url('./assets/fonts/AzeretMono-VariableFont_wght.ttf');
+}
+
+#root {
+  max-width: 1024px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.container {
+  position: relative;
+  margin-bottom: 60px;
+}
+.walletcontainer {
+  width: 423px;
+  height: 540px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.field {
+  text-align: left;
+  margin: 20px 0px 20px 0px;
+}
+
+.field label {
+  display: block;
+}
+.sendbutton {
+  width: 423px;
+  padding: 10px 0;
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.sendbutton:disabled {
+  width: 423px;
+  background-color: #eaeaea;
+  color: #b0b0b0;
+  border: none;
+}
+.fields {
+  margin-top: auto;
+}
+.field input {
+  border: 1px solid #eaeaea;
+  padding: 10px 10px;
+  border-radius: 3px;
+  width: 403px;
+  margin-top: auto;
+}
+.header {
+  display: flex;
+  justify-content: flex-end;
+  width: 1024px;
+  padding-bottom: 60px;
+}
+
+.header p {
+  color: white;
+  padding: 0 40px;
+  font-size: 13px;
+  font-family: Azeret;
+  font-weight: 600;
+}
+.connect {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.card {
+  margin-top: 20px;
+}
+.description {
+  /* background-color: black; */
+  color: black;
+  display: flex;
+  /* padding: 10px; */
+  align-items: center;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.description div.image {
+  padding-right: 2px;
+  width: 32px;
+  height: 32px;
+}
+.image > img {
+  padding: 15px 0px 15px 0;
+}
+.description div.text {
+  text-align: left;
+  font-size: 12px;
+  font-family: Azeret;
+  font-weight: 600;
+  max-width: 342px;
+}
+.text > p {
+  text-align: left;
+  font-size: 12px;
+  font-family: Azeret;
+  font-weight: 600;
+}
+.text > .statusBar {
+  margin: 0;
+  content: '';
+  display: inline-block;
+  font-family: Azeret;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 20px;
+  margin-top: 15px;
+  text-align: left;
+}
+button.wallet-adapter-button {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  height: 40px;
+}
+
+button.wallet-adapter-button:hover {
+  background-color: #888 !important;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.read-the-docs {
+  color: #888;
+}
