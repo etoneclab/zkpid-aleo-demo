@@ -1,15 +1,15 @@
 'use client'
  
-import { useSearchParams } from 'next/navigation'
-
 import { useEffect, useState } from 'react';
 import  KycFrame   from '../components/kycframe'
 import { robo700, robo500 } from '../../styles/fonts'
 import { getKyciFrameUrl } from '../actions'
 
 export default function Kyc() {
-  const searchParams = useSearchParams()
+  // Fetch wallet address from URL
+  const searchParams = new URLSearchParams(window.location.search);
   const walletAddress = searchParams.get('address');
+
   const [iframeUrl, setIframeUrl] = useState("");
   const [kycDone, setKycDone] = useState(false)
   const [ready, setReady] = useState(false)
