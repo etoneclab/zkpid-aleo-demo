@@ -330,7 +330,6 @@ export const ExecuteTransaction = ({}) => {
 
       console.log("TRX:", aleoTransaction, txId);
 
-      setLoading(false);
       if(txId) {
           setTrID(txId);
           setTransaction(aleoTransaction);
@@ -350,6 +349,8 @@ export const ExecuteTransaction = ({}) => {
         setSubmitBtn("Try again");
         resetFields(); // Reset fields to empty
         return;
+    } finally {
+      setLoading(false);
     }
   }
 
