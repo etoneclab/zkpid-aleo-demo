@@ -86,3 +86,7 @@ npm run dev
 See [README.md](./doc/README.md) in the `doc/` folder for the technical details of the PoC.
 
 See [README.md](./kycfrontend/README.md) in the `kycfrontend/` folder for the technical details of the KYC Frontend.
+
+---
+
+Copyright 2023 etonec GmbH
